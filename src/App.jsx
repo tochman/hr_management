@@ -1,11 +1,18 @@
-import React, { Component } from 'react'
+import React from 'react'
+import EmployeeList from './EmployeeList'
+import { Container } from 'semantic-ui-react'
 
-export default class App extends Component {
-	render() {
-		return (
-			<>
-					<h1>Employee list</h1>
-			</>
-		)
-	}
+const App = () => {
+  return (
+    <Container>
+      <section name="header">
+        <h1>Employee list</h1>
+      </section>
+      <section name="main">
+        <EmployeeList />
+      </section>
+    </Container>
+  )
 }
+
+export default App
